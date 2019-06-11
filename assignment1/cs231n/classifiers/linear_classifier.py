@@ -63,7 +63,7 @@ class LinearClassifier(object):
             loss_history.append(loss)
             self.W = self.W - learning_rate*dW
             pass
-
+                                                 
             # *****END OF YOUR CODE (DO NOT DELETE/MODIFY THIS LINE)*****
 
             # evaluate loss and gradient
