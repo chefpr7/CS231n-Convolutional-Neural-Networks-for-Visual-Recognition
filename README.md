@@ -5,4 +5,4 @@ The solutions to the assignments of CS231n course. <br/> <h2>Assignment 1</h2> <
 3. Softmax :  [notebook](https://github.com/chefpr7/CS231n-Convolutional-Neural-Networks-for-Visual-Recognition/blob/master/assignment1/softmax_solved.ipynb) | [classifier](https://github.com/chefpr7/CS231n-Convolutional-Neural-Networks-for-Visual-Recognition/blob/master/assignment1/cs231n/classifiers/softmax.py)<br/>
 4. Two Layer Neural Nets :  [notebook](https://github.com/chefpr7/CS231n-Convolutional-Neural-Networks-for-Visual-Recognition/blob/master/assignment1/two_layer_net.ipynb) | [classifier](https://github.com/chefpr7/CS231n-Convolutional-Neural-Networks-for-Visual-Recognition/blob/master/assignment1/cs231n/classifiers/neural_net.py)<br/>
 5. Feature extractor :  [notebook](https://github.com/chefpr7/CS231n-Convolutional-Neural-Networks-for-Visual-Recognition/blob/master/assignment1/features_solved.ipynb)  <br/><br/>
-<br/><h2>Assignment 2 </h2>
+<h2>Assignment 2 </h2>
