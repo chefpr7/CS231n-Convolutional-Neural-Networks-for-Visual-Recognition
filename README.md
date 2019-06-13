@@ -1,5 +1,5 @@
 # CS231n-Convolutional-Neural-Networks-for-Visual-Recognition
-The solutions to the assignments of CS231n course. <br/> <h2>Assignment 1</h2> <br/>
+The solutions to the assignments of CS231n course. <br/> <h2>Assignment 1</h2><br/>
 1. K-Nearest-Neighbours : [notebook](https://github.com/chefpr7/CS231n-Convolutional-Neural-Networks-for-Visual-Recognition/blob/master/assignment1/knn_solved.ipynb) | [classifier](https://github.com/chefpr7/CS231n-Convolutional-Neural-Networks-for-Visual-Recognition/blob/master/assignment1/cs231n/classifiers/k_nearest_neighbor.py)</br>
 2. SVM : [notebook](https://github.com/chefpr7/CS231n-Convolutional-Neural-Networks-for-Visual-Recognition/blob/master/assignment1/svm_solved.ipynb) | [classifier](https://github.com/chefpr7/CS231n-Convolutional-Neural-Networks-for-Visual-Recognition/blob/master/assignment1/cs231n/classifiers/linear_svm.py)<br/>
 3. Softmax :  [notebook](https://github.com/chefpr7/CS231n-Convolutional-Neural-Networks-for-Visual-Recognition/blob/master/assignment1/softmax_solved.ipynb) | [classifier](https://github.com/chefpr7/CS231n-Convolutional-Neural-Networks-for-Visual-Recognition/blob/master/assignment1/cs231n/classifiers/softmax.py)<br/>
