@@ -5,4 +5,10 @@ The solutions to the assignments of CS231n course. <br/> <h2>Assignment 1</h2><b
 3. Softmax :  [notebook](https://github.com/chefpr7/CS231n-Convolutional-Neural-Networks-for-Visual-Recognition/blob/master/assignment1/softmax_solved.ipynb) | [classifier](https://github.com/chefpr7/CS231n-Convolutional-Neural-Networks-for-Visual-Recognition/blob/master/assignment1/cs231n/classifiers/softmax.py)<br/>
 4. Two Layer Neural Nets :  [notebook](https://github.com/chefpr7/CS231n-Convolutional-Neural-Networks-for-Visual-Recognition/blob/master/assignment1/two_layer_net.ipynb) | [classifier](https://github.com/chefpr7/CS231n-Convolutional-Neural-Networks-for-Visual-Recognition/blob/master/assignment1/cs231n/classifiers/neural_net.py)<br/>
 5. Feature extractor :  [notebook](https://github.com/chefpr7/CS231n-Convolutional-Neural-Networks-for-Visual-Recognition/blob/master/assignment1/features_solved.ipynb)  <br/><br/>
-<h2>Assignment 2 </h2>
+<h2>Assignment 2 </h2><br/>
+1. FullyConnectedNets : [notebook](https://github.com/chefpr7/CS231n-Convolutional-Neural-Networks-for-Visual-Recognition/blob/master/assignment2/PyTorch.ipynb) | [fc_net.py](https://github.com/chefpr7/CS231n-Convolutional-Neural-Networks-for-Visual-Recognition/blob/master/assignment2/cs231n/classifiers/fc_net.py)<br/>
+2. Dropout : [notebook](https://github.com/chefpr7/CS231n-Convolutional-Neural-Networks-for-Visual-Recognition/blob/master/assignment2/Dropout.ipynb) <br/>
+3. Batch Normalization : [notebook](https://github.com/chefpr7/CS231n-Convolutional-Neural-Networks-for-Visual-Recognition/blob/master/assignment2/BatchNormalization.ipynb) <br/>
+4. Convolutional Neural Networks : [notebook](https://github.com/chefpr7/CS231n-Convolutional-Neural-Networks-for-Visual-Recognition/blob/master/assignment2/ConvolutionalNetworks.ipynb) </br>
+5. Pytorch : [notebook](https://github.com/chefpr7/CS231n-Convolutional-Neural-Networks-for-Visual-Recognition/blob/master/assignment2/PyTorch.ipynb) <br/>
+Module containing functions related to all the above tasks : [layers.py](https://github.com/chefpr7/CS231n-Convolutional-Neural-Networks-for-Visual-Recognition/blob/master/assignment2/cs231n/layers.py)
