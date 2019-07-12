@@ -13,4 +13,6 @@ The solutions to the assignments of CS231n course. <br/> <h2>Assignment 1</h2><b
 3. Batch Normalization : [notebook](https://github.com/chefpr7/CS231n-Convolutional-Neural-Networks-for-Visual-Recognition/blob/master/assignment2/BatchNormalization.ipynb)<br/>
 4. Convolutional Neural Networks : [notebook](https://github.com/chefpr7/CS231n-Convolutional-Neural-Networks-for-Visual-Recognition/blob/master/assignment2/ConvolutionalNetworks.ipynb)</br>
 5. Pytorch : [notebook](https://github.com/chefpr7/CS231n-Convolutional-Neural-Networks-for-Visual-Recognition/blob/master/assignment2/PyTorch.ipynb)<br/>
-Module containing functions related to all the above tasks : [layers](https://github.com/chefpr7/CS231n-Convolutional-Neural-Networks-for-Visual-Recognition/blob/master/assignment2/cs231n/layers.py)
+Module containing functions related to all the above tasks : [layers](https://github.com/chefpr7/CS231n-Convolutional-Neural-Networks-for-Visual-Recognition/blob/master/assignment2/cs231n/layers.py)<br/><br/>
+
+<h2>Assignment 3 </h2><br/>
