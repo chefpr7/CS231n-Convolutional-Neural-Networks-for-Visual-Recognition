@@ -35,7 +35,8 @@ def rnn_step_forward(x, prev_h, Wx, Wh, b):
     # and cache variables respectively.                                          #
     ##############################################################################
     # *****START OF YOUR CODE (DO NOT DELETE/MODIFY THIS LINE)*****
-
+    next_h = np.tanh(np.dot(prev_h,Wh)+np.dot(x,Wx)+b)
+    cache = (x,Wx,prev_h,Wh,next_h)
     pass
 
     # *****END OF YOUR CODE (DO NOT DELETE/MODIFY THIS LINE)*****
@@ -62,13 +63,25 @@ def rnn_step_backward(dnext_h, cache):
     """
     dx, dprev_h, dWx, dWh, db = None, None, None, None, None
     ##############################################################################
-    # TODO: Implement the backward pass for a single step of a vanilla RNN.      #
+    # TODO: Implement the backward pass) for a single step of a vanilla RNN.      #
     #                                                                            #
     # HINT: For the tanh function, you can compute the local derivative in terms #
     # of the output value from tanh.                                             #
     ##############################################################################
     # *****START OF YOUR CODE (DO NOT DELETE/MODIFY THIS LINE)*****
-
+    x      = cache[0]
+    Wx     = cache[1]
+    prev_h = cache[2]
+    Wh     = cache[3]
+    tanhx  = cache[4]
+   
+    dtanhx = (1-tanhx**2)*dnext_h
+    db     = np.sum(dtanhx,axis=0)
+    dx     = np.dot(dtanhx,Wx.T)
+    dWx    = np.dot(x.T,dtanhx)
+    dprev_h= np.dot(dtanhx,Wh.T)
+    dWh    = np.dot(prev_h.T,dtanhx)
+    
     pass
 
     # *****END OF YOUR CODE (DO NOT DELETE/MODIFY THIS LINE)*****
@@ -103,7 +116,16 @@ def rnn_forward(x, h0, Wx, Wh, b):
     # above. You can use a for loop to help compute the forward pass.            #
     ##############################################################################
     # *****START OF YOUR CODE (DO NOT DELETE/MODIFY THIS LINE)*****
-
+    x = np.transpose(x,axes=(1,0,2))
+    T,N,D  = x.shape
+    prev_h = h0
+    cache=[]
+    h = []
+    for i in range(T):
+        prev_h,c = rnn_step_forward(x[i], prev_h, Wx, Wh, b)
+        h.append(prev_h)
+        cache.append(c)
+    h = np.array(h).transpose((1,0,2))
     pass
 
     # *****END OF YOUR CODE (DO NOT DELETE/MODIFY THIS LINE)*****
@@ -139,7 +161,24 @@ def rnn_backward(dh, cache):
     # defined above. You can use a for loop to help compute the backward pass.   #
     ##############################################################################
     # *****START OF YOUR CODE (DO NOT DELETE/MODIFY THIS LINE)*****
-
+    dh = np.transpose(dh,axes=(1,0,2))
+    T,N,H  = dh.shape
+    _,D = cache[0][0].shape
+    
+    dx  = []
+    dWx = np.zeros((D,H))
+    dWh = np.zeros((H,H))
+    dh0 = np.zeros((N,H))
+    db  = np.zeros((H,))
+    
+    for i in range(T-1,-1,-1):    
+        Dx, dh0, DWx, DWh, Db = rnn_step_backward(dh[i]+dh0, cache[i])
+        dx.append(Dx)
+        dWx += DWx
+        dWh += DWh
+        db  += Db
+        
+    dx=np.asarray(dx[::-1]).transpose((1,0,2))
     pass
 
     # *****END OF YOUR CODE (DO NOT DELETE/MODIFY THIS LINE)*****
@@ -171,7 +210,8 @@ def word_embedding_forward(x, W):
     # HINT: This can be done in one line using NumPy's array indexing.           #
     ##############################################################################
     # *****START OF YOUR CODE (DO NOT DELETE/MODIFY THIS LINE)*****
-
+    out = W[x.reshape(-1)].reshape(x.shape[0],x.shape[1],W.shape[1])
+    cache=(x,W)
     pass
 
     # *****END OF YOUR CODE (DO NOT DELETE/MODIFY THIS LINE)*****
@@ -204,7 +244,10 @@ def word_embedding_backward(dout, cache):
     # HINT: Look up the function np.add.at                                       #
     ##############################################################################
     # *****START OF YOUR CODE (DO NOT DELETE/MODIFY THIS LINE)*****
-
+    x = cache[0]
+    W = cache[1]
+    dW = np.zeros(W.shape)
+    np.add.at(dW,x,dout)
     pass
 
     # *****END OF YOUR CODE (DO NOT DELETE/MODIFY THIS LINE)*****
