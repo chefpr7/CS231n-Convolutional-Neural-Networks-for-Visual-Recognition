@@ -18,3 +18,4 @@ Module containing functions related to all the above tasks : [layers](https://gi
 <h2>Assignment 3 </h2><br/>
 
 1. RNN-Captioning : [notebook](https://github.com/chefpr7/CS231n-Convolutional-Neural-Networks-for-Visual-Recognition/blob/master/assignment3/RNN_Captioning.ipynb) | [rnn_layers.py](https://github.com/chefpr7/CS231n-Convolutional-Neural-Networks-for-Visual-Recognition/blob/master/assignment3/cs231n/rnn_layers.py) | [rnn.py](https://github.com/chefpr7/CS231n-Convolutional-Neural-Networks-for-Visual-Recognition/blob/master/assignment3/cs231n/classifiers/rnn.py) <br/>
+Backprop Weight Embedding Notes : [here](https://github.com/chefpr7/CS231n-Convolutional-Neural-Networks-for-Visual-Recognition/blob/master/Notes/Backprop_weight_embed.pdf)
