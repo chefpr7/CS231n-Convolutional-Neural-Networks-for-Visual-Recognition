@@ -16,3 +16,5 @@ The solutions to the assignments of CS231n course. <br/> <h2>Assignment 1</h2><b
 Module containing functions related to all the above tasks : [layers](https://github.com/chefpr7/CS231n-Convolutional-Neural-Networks-for-Visual-Recognition/blob/master/assignment2/cs231n/layers.py)<br/><br/>
 
 <h2>Assignment 3 </h2><br/>
+
+1. RNN-Captioning : [notebook](https://github.com/chefpr7/CS231n-Convolutional-Neural-Networks-for-Visual-Recognition/blob/master/assignment3/RNN_Captioning.ipynb) | [rnn_layers.py](https://github.com/chefpr7/CS231n-Convolutional-Neural-Networks-for-Visual-Recognition/blob/master/assignment3/cs231n/rnn_layers.py) | [rnn.py](https://github.com/chefpr7/CS231n-Convolutional-Neural-Networks-for-Visual-Recognition/blob/master/assignment3/cs231n/classifiers/rnn.py) <br/>
